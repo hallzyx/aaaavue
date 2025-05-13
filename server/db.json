@@ -1,0 +1,1081 @@
+{
+  "hotels": [
+    {
+      "id": 1,
+      "name": "Hotel Cheraton Center",
+      "address": "Calle Gran Vía 123, Lima",
+      "email": "info@hotelmc.com",
+      "phone": "+34900111222",
+      "status": "active",
+      "createdAt": "2024-01-10T08:00:00",
+      "subscriptionId": 1,
+      "adminId": 3,
+      "requestCategories": [
+        "Limpieza",
+        "Mantenimiento",
+        "Room Service",
+        "Toallas/Ropa",
+        "Dispositivos IoT",
+        "Otros",
+        "Reparación"
+      ],
+      "requestStatuses": {
+        "pending": "Pendiente",
+        "in-progress": "En progreso",
+        "completed": "Resuelto"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Barcelona Beach Resort",
+      "address": "Paseo Marítimo 45, Barcelona",
+      "email": "info@barcelonabeach.com",
+      "phone": "+34900333444",
+      "status": "active",
+      "createdAt": "2024-02-15T10:30:00",
+      "subscriptionId": 2,
+      "adminId": 6,
+      "requestCategories": [
+        "Limpieza",
+        "Mantenimiento",
+        "Room Service",
+        "Toallas/Ropa",
+        "Dispositivos IoT",
+        "Otros",
+        "Reparación"
+      ],
+      "requestStatuses": {
+        "pending": "Pendiente",
+        "in-progress": "En progreso",
+        "completed": "Resuelto"
+      }
+    },
+    {
+      "id": 3,
+      "name": "IoT Smart Hotel",
+      "address": "Tech Avenue 456, Valencia",
+      "email": "info@iotshotel.com",
+      "phone": "+34900777888",
+      "status": "active",
+      "createdAt": "2024-08-01T09:00:00",
+      "subscriptionId": 3,
+      "adminId": 7,
+      "requestCategories": [
+        "Limpieza",
+        "Mantenimiento",
+        "Room Service",
+        "Toallas/Ropa",
+        "Dispositivos IoT",
+        "Otros",
+        "Reparación"
+      ],
+      "requestStatuses": {
+        "pending": "Pendiente",
+        "in-progress": "En progreso",
+        "completed": "Resuelto"
+      }
+    }
+  ],
+  "subscriptions": [
+    {
+      "id": 1,
+      "hotelId": 1,
+      "status": "active",
+      "startDate": "2024-01-10T08:00:00",
+      "endDate": "2025-01-10T08:00:00",
+      "maxRooms": 200,
+      "maxStaff": 50,
+      "maxIotDevices": 500
+    },
+    {
+      "id": 2,
+      "hotelId": 2,
+      "status": "active",
+      "startDate": "2024-02-15T10:30:00",
+      "endDate": "2025-02-15T10:30:00",
+      "maxRooms": 100,
+      "maxStaff": 20,
+      "maxIotDevices": 250
+    },
+    {
+      "id": 3,
+      "hotelId": 3,
+      "status": "active",
+      "startDate": "2024-08-01T09:00:00",
+      "endDate": "2025-08-01T09:00:00",
+      "maxRooms": 150,
+      "maxStaff": 30,
+      "maxIotDevices": 400
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "hotelId": 1,
+      "firstName": "Juan",
+      "lastName": "Pérez",
+      "email": "juan.perez@email.com",
+      "password": "juan123",
+      "phone": "+34600123456",
+      "role": "guest",
+      "createdAt": "2025-01-15T10:30:00",
+      "devicePreferences": {}
+    },
+    {
+      "id": 2,
+      "hotelId": 1,
+      "firstName": "María",
+      "lastName": "González",
+      "email": "maria.gonzalez@email.com",
+      "password": "maria123",
+      "phone": "+34600789012",
+      "role": "guest",
+      "createdAt": "2025-02-02T14:15:00",
+      "devicePreferences": {}
+    },
+    {
+      "id": 3,
+      "hotelId": 1,
+      "firstName": "Juan ",
+      "lastName": "Perez",
+      "email": "juan.perez@hotel.com",
+      "password": "juan123",
+      "phone": "+34600111222",
+      "role": "admin",
+      "department": "Management",
+      "createdAt": "2024-05-10T09:00:00",
+      "devicePreferences": {}
+    },
+    {
+      "id": 4,
+      "hotelId": 1,
+      "firstName": "Ana",
+      "lastName": "López",
+      "email": "ana.lopez@hotel.com",
+      "password": "ana123",
+      "phone": "+34600333444",
+      "role": "staff",
+      "department": "Housekeeping",
+      "createdAt": "2024-06-15T08:30:00",
+      "devicePreferences": {}
+    },
+    {
+      "id": 5,
+      "hotelId": 1,
+      "firstName": "David",
+      "lastName": "Martínez",
+      "email": "david.martinez@hotel.com",
+      "password": "david123",
+      "phone": "+34600555666",
+      "role": "staff",
+      "department": "Technical Support",
+      "createdAt": "2024-07-20T10:15:00",
+      "devicePreferences": {}
+    },
+    {
+      "id": 6,
+      "hotelId": 2,
+      "firstName": "Elena",
+      "lastName": "Fernández",
+      "email": "elena@barcelonabeach.com",
+      "password": "elena123",
+      "phone": "+34600777888",
+      "role": "admin",
+      "department": "Management",
+      "createdAt": "2024-02-15T11:30:00",
+      "devicePreferences": {}
+    },
+    {
+      "id": 7,
+      "hotelId": 3,
+      "firstName": "Laura",
+      "lastName": "Sánchez",
+      "email": "laura.sanchez@iotshotel.com",
+      "password": "laura123",
+      "phone": "+34600987654",
+      "role": "admin",
+      "department": "Smart Services",
+      "createdAt": "2024-08-01T09:05:00",
+      "devicePreferences": {}
+    }
+  ],
+  "rooms": [
+    {
+      "id": 101,
+      "hotelId": 1,
+      "number": "101",
+      "type": "Suite Presidential",
+      "status": "available",
+      "price": 300,
+      "floor": 1,
+      "description": "Luxury suite with smart controls",
+      "iotDevices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "defaultSettings": {
+        "temperature": 22,
+        "lighting": "warm",
+        "curtains": "auto"
+      }
+    },
+    {
+      "id": 102,
+      "hotelId": 1,
+      "number": "102",
+      "type": "Deluxe Twin",
+      "status": "occupied",
+      "price": 180,
+      "floor": 1,
+      "description": "Two beds with smart lighting",
+      "iotDevices": [
+        5,
+        6,
+        7
+      ],
+      "defaultSettings": {
+        "temperature": 23,
+        "lighting": "neutral",
+        "curtains": "closed"
+      }
+    },
+    {
+      "id": 103,
+      "hotelId": 1,
+      "number": "103",
+      "type": "Family Suite",
+      "status": "cleaning",
+      "price": 250,
+      "floor": 2,
+      "description": "Spacious family room",
+      "iotDevices": [
+        8,
+        9
+      ],
+      "defaultSettings": {}
+    },
+    {
+      "id": 104,
+      "hotelId": 1,
+      "number": "104",
+      "type": "Smart Minimal Room",
+      "status": "maintenance",
+      "price": 150,
+      "floor": 2,
+      "description": "Tech-focused compact room",
+      "iotDevices": [],
+      "defaultSettings": {}
+    },
+    {
+      "id": 105,
+      "hotelId": 1,
+      "number": "105",
+      "type": "Single",
+      "status": "available",
+      "price": 65,
+      "floor": 3,
+      "description": "Mountain view, single bed",
+      "iotDevices": [],
+      "defaultSettings": {}
+    },
+    {
+      "id": 106,
+      "hotelId": 1,
+      "number": "106",
+      "type": "Suite",
+      "status": "occupied",
+      "price": 160,
+      "floor": 3,
+      "description": "Private lounge, minibar",
+      "iotDevices": [
+        10,
+        11,
+        12
+      ],
+      "defaultSettings": {}
+    },
+    {
+      "id": 201,
+      "hotelId": 2,
+      "number": "201",
+      "type": "Double",
+      "status": "available",
+      "price": 90,
+      "floor": 2,
+      "description": "Beach view, balcony",
+      "iotDevices": [
+        13,
+        14
+      ],
+      "defaultSettings": {}
+    },
+    {
+      "id": 202,
+      "hotelId": 2,
+      "number": "202",
+      "type": "Single",
+      "status": "occupied",
+      "price": 70,
+      "floor": 2,
+      "description": "Garden view",
+      "iotDevices": [
+        15
+      ],
+      "defaultSettings": {}
+    },
+    {
+      "id": 301,
+      "hotelId": 1,
+      "number": "301",
+      "type": "Suite Presidential",
+      "status": "available",
+      "price": 500,
+      "floor": 5,
+      "description": "Luxurious suite with king-size bed, sea view, and jacuzzi.",
+      "iotDevices": [
+        1,
+        2,
+        6,
+        7
+      ],
+      "defaultSettings": {
+        "temperature": 22,
+        "lighting": "warm white",
+        "curtains": "open"
+      },
+      "images": [
+        "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg ",
+        "https://thumbs.dreamstime.com/b/hotel-room-beautiful-orange-sofa-included-43642330.jpg "
+      ]
+    },
+    {
+      "id": 302,
+      "hotelId": 1,
+      "number": "302",
+      "type": "Deluxe Twin",
+      "status": "available",
+      "price": 280,
+      "floor": 4,
+      "description": "Modern room with two twin beds and a working desk, ideal for business travelers.",
+      "iotDevices": [
+        2,
+        3,
+        4
+      ],
+      "defaultSettings": {
+        "temperature": 23,
+        "lighting": "cool white",
+        "curtains": "auto"
+      },
+      "images": [
+        "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg ",
+        "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg "
+      ]
+    },
+    {
+      "id": 303,
+      "hotelId": 1,
+      "number": "303",
+      "type": "Family Suite",
+      "status": "available",
+      "price": 390,
+      "floor": 3,
+      "description": "Spacious suite for families with living room, kitchenette, and ambient music system.",
+      "iotDevices": [
+        2,
+        5,
+        6,
+        8
+      ],
+      "defaultSettings": {
+        "temperature": 22,
+        "lighting": "neutral",
+        "musicVolume": 40,
+        "fragrance": "lavender"
+      },
+      "images": [
+        "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg ",
+        "https://images.pexels.com/photos/1571457/pexels-photo-1571457.jpeg "
+      ]
+    },
+    {
+      "id": 304,
+      "hotelId": 1,
+      "number": "304",
+      "type": "Smart Minimal Room",
+      "status": "available",
+      "price": 210,
+      "floor": 2,
+      "description": "Minimalistic and fully automated room for solo travelers. Includes window and climate control.",
+      "iotDevices": [
+        1,
+        7
+      ],
+      "defaultSettings": {
+        "temperature": 21,
+        "windowOpen": false
+      },
+      "images": [
+        "https://images.pexels.com/photos/271619/pexels-photo-271619.jpeg "
+      ]
+    }
+  ],
+  "iotDevices": [
+    {
+      "id": 1,
+      "name": "Temperature Sensor",
+      "type": "sensor",
+      "deviceType": "climate",
+      "roomId": 101,
+      "hotelId": 1,
+      "status": "online",
+      "customizable": true,
+      "properties": {
+        "unit": "Celsius",
+        "currentValue": 22.5,
+        "threshold": 25
+      },
+      "allowedUsers": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Smart Light",
+      "type": "actuator",
+      "deviceType": "lighting",
+      "roomId": 101,
+      "hotelId": 1,
+      "status": "online",
+      "customizable": true,
+      "properties": {
+        "brightness": 80,
+        "color": "warm white",
+        "isOn": true
+      },
+      "allowedUsers": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Automatic Curtains",
+      "type": "actuator",
+      "deviceType": "window",
+      "roomId": 101,
+      "hotelId": 1,
+      "status": "online",
+      "customizable": true,
+      "properties": {
+        "open": true,
+        "position": 100
+      },
+      "allowedUsers": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Smart TV",
+      "type": "actuator",
+      "deviceType": "entertainment",
+      "roomId": 101,
+      "hotelId": 1,
+      "status": "offline",
+      "customizable": false,
+      "properties": {
+        "apps": [
+          "Netflix",
+          "YouTube"
+        ],
+        "volume": 30,
+        "isOn": false
+      },
+      "allowedUsers": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Temperature Sensor",
+      "type": "sensor",
+      "deviceType": "climate",
+      "roomId": 102,
+      "hotelId": 1,
+      "status": "online",
+      "customizable": true,
+      "properties": {
+        "unit": "Celsius",
+        "currentValue": 24,
+        "threshold": 25
+      },
+      "allowedUsers": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Smart Light",
+      "type": "actuator",
+      "deviceType": "lighting",
+      "roomId": 102,
+      "hotelId": 1,
+      "status": "online",
+      "customizable": true,
+      "properties": {
+        "brightness": 60,
+        "color": "cool white",
+        "isOn": true
+      },
+      "allowedUsers": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Room Camera",
+      "type": "sensor",
+      "deviceType": "security",
+      "roomId": 102,
+      "hotelId": 1,
+      "status": "online",
+      "customizable": false,
+      "properties": {
+        "resolution": "1080p",
+        "isRecording": false
+      },
+      "allowedUsers": [
+        3,
+        5
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Ambient Sound System",
+      "type": "actuator",
+      "deviceType": "audio",
+      "roomId": 103,
+      "hotelId": 1,
+      "status": "online",
+      "customizable": true,
+      "properties": {
+        "volume": 50,
+        "source": "jazz",
+        "isOn": true
+      },
+      "allowedUsers": [
+        3
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Smart Fragrance Diffuser",
+      "type": "actuator",
+      "deviceType": "environment",
+      "roomId": 103,
+      "hotelId": 1,
+      "status": "maintenance",
+      "customizable": true,
+      "properties": {
+        "intensity": 3,
+        "scent": "lavender",
+        "isOn": false
+      },
+      "allowedUsers": [
+        3
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Temperature Sensor",
+      "type": "sensor",
+      "deviceType": "climate",
+      "roomId": 106,
+      "hotelId": 1,
+      "status": "online",
+      "customizable": true,
+      "properties": {
+        "unit": "Celsius",
+        "currentValue": 21,
+        "threshold": 25
+      },
+      "allowedUsers": [
+        3
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Window Opener",
+      "type": "actuator",
+      "deviceType": "window",
+      "roomId": 106,
+      "hotelId": 1,
+      "status": "online",
+      "customizable": true,
+      "properties": {
+        "open": false,
+        "position": 0
+      },
+      "allowedUsers": [
+        3
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Smart Light",
+      "type": "actuator",
+      "deviceType": "lighting",
+      "roomId": 106,
+      "hotelId": 1,
+      "status": "online",
+      "customizable": true,
+      "properties": {
+        "brightness": 40,
+        "color": "daylight",
+        "isOn": true
+      },
+      "allowedUsers": [
+        3
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Temperature Sensor",
+      "type": "sensor",
+      "deviceType": "climate",
+      "roomId": 201,
+      "hotelId": 2,
+      "status": "online",
+      "customizable": true,
+      "properties": {
+        "unit": "Celsius",
+        "currentValue": 23.5,
+        "threshold": 25
+      },
+      "allowedUsers": [
+        6
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Smart Light",
+      "type": "actuator",
+      "deviceType": "lighting",
+      "roomId": 201,
+      "hotelId": 2,
+      "status": "online",
+      "customizable": true,
+      "properties": {
+        "brightness": 75,
+        "color": "warm white",
+        "isOn": true
+      },
+      "allowedUsers": [
+        6
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Room Camera",
+      "type": "sensor",
+      "deviceType": "security",
+      "roomId": 202,
+      "hotelId": 2,
+      "status": "inactive",
+      "customizable": false,
+      "properties": {
+        "resolution": "1080p",
+        "isRecording": false
+      },
+      "allowedUsers": [
+        6
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Temperature Sensor",
+      "type": "sensor",
+      "deviceType": "climate",
+      "roomId": 301,
+      "hotelId": 3,
+      "status": "online",
+      "customizable": true,
+      "properties": {
+        "unit": "Celsius",
+        "currentValue": 22.5,
+        "threshold": 25
+      },
+      "allowedUsers": [
+        7
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Smart Light",
+      "type": "actuator",
+      "deviceType": "lighting",
+      "roomId": 301,
+      "hotelId": 3,
+      "status": "online",
+      "customizable": true,
+      "properties": {
+        "brightness": 80,
+        "color": "warm white",
+        "isOn": true
+      },
+      "allowedUsers": [
+        7
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Automatic Curtains",
+      "type": "actuator",
+      "deviceType": "window",
+      "roomId": 301,
+      "hotelId": 3,
+      "status": "online",
+      "customizable": true,
+      "properties": {
+        "open": true,
+        "position": 100
+      },
+      "allowedUsers": [
+        7
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Jacuzzi",
+      "type": "actuator",
+      "deviceType": "bathroom",
+      "roomId": 301,
+      "hotelId": 3,
+      "status": "offline",
+      "customizable": true,
+      "properties": {
+        "temperature": 38,
+        "isOn": false
+      },
+      "allowedUsers": [
+        7
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Automatic Curtains",
+      "type": "actuator",
+      "deviceType": "window",
+      "roomId": 302,
+      "hotelId": 3,
+      "status": "online",
+      "customizable": true,
+      "properties": {
+        "open": false,
+        "position": 0
+      },
+      "allowedUsers": [
+        7
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Smart TV",
+      "type": "actuator",
+      "deviceType": "entertainment",
+      "roomId": 302,
+      "hotelId": 3,
+      "status": "online",
+      "customizable": true,
+      "properties": {
+        "apps": [
+          "Netflix",
+          "HBO",
+          "Disney+"
+        ],
+        "volume": 35,
+        "isOn": true
+      },
+      "allowedUsers": [
+        7
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Ambient Music System",
+      "type": "actuator",
+      "deviceType": "audio",
+      "roomId": 303,
+      "hotelId": 3,
+      "status": "online",
+      "customizable": true,
+      "properties": {
+        "volume": 40,
+        "source": "classical",
+        "isOn": true
+      },
+      "allowedUsers": [
+        7
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Smart Fragrance Diffuser",
+      "type": "actuator",
+      "deviceType": "environment",
+      "roomId": 303,
+      "hotelId": 3,
+      "status": "online",
+      "customizable": true,
+      "properties": {
+        "intensity": 4,
+        "scent": "lavender",
+        "isOn": true
+      },
+      "allowedUsers": [
+        7
+      ]
+    },
+    {
+      "id": "2b06",
+      "roomId": 105,
+      "type": "sensor",
+      "name": "Temperature Sensor",
+      "status": "inactive",
+      "properties": {},
+      "customizable": true,
+      "hotelId": null
+    },
+    {
+      "id": "2f3e",
+      "roomId": 103,
+      "type": "sensor",
+      "name": "sensor",
+      "status": "inactive",
+      "properties": {},
+      "customizable": true
+    }
+  ],
+  "bookings": [
+    {
+      "id": 1,
+      "userId": 1,
+      "hotelId": 1,
+      "roomId": 101,
+      "checkInDate": "2025-05-01T14:00:00",
+      "checkOutDate": "2025-05-05T12:00:00",
+      "status": "active",
+      "totalPrice": 480,
+      "paymentStatus": "paid",
+      "specialRequests": "Late check-in, around 20:00",
+      "createdAt": "2025-03-15T09:45:00",
+      "preferences": {
+        "temperature": 22,
+        "lighting": {
+          "brightness": 80,
+          "color": "warm"
+        },
+        "curtains": "open",
+        "tvVolume": 30
+      },
+      "appliedDevicePreferences": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "hotelId": 1,
+      "roomId": 102,
+      "checkInDate": "2025-05-02T15:30:00",
+      "checkOutDate": "2025-05-07T11:00:00",
+      "status": "active",
+      "totalPrice": 750,
+      "paymentStatus": "paid",
+      "specialRequests": "Quiet room away from elevator",
+      "createdAt": "2025-03-20T11:30:00",
+      "preferences": {
+        "temperature": 24,
+        "lighting": {
+          "brightness": 60,
+          "color": "cool"
+        },
+        "curtains": "closed",
+        "tvVolume": 20
+      },
+      "appliedDevicePreferences": [
+        5,
+        6
+      ]
+    }
+  ],
+  "serviceRequests": [
+    {
+      "id": 1,
+      "userId": 1,
+      "hotelId": 1,
+      "roomId": 101,
+      "requestType": "Toallas/Ropa",
+      "category": "Limpieza",
+      "description": "Necesito toallas adicionales",
+      "status": "pending",
+      "priority": "normal",
+      "createdAt": "2025-05-02T09:15:00",
+      "assignedStaffId": null,
+      "completedAt": null,
+      "history": [
+        {
+          "timestamp": "2025-05-02T09:15:00",
+          "action": "Petición creada",
+          "changedBy": 1,
+          "notes": "El huésped solicitó toallas adicionales"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "hotelId": 1,
+      "roomId": 102,
+      "requestType": "Reparación",
+      "category": "Mantenimiento",
+      "description": "Aire acondicionado hace ruido extraño",
+      "status": "in-progress",
+      "priority": "high",
+      "createdAt": "2025-05-02T10:45:00",
+      "assignedStaffId": 5,
+      "completedAt": null,
+      "history": [
+        {
+          "timestamp": "2025-05-02T10:45:00",
+          "action": "Petición creada",
+          "changedBy": 2,
+          "notes": "Problema reportado con el aire acondicionado"
+        }
+      ]
+    },
+    {
+      "id": "3887",
+      "userId": 1,
+      "hotelId": 1,
+      "roomId": 103,
+      "type": "Reparación",
+      "description": "se malogro mi tele",
+      "status": "En progreso",
+      "priority": "Urgente",
+      "createdAt": "2025-05-12T07:54:52.957Z",
+      "assignedTo": 4,
+      "completedAt": null,
+      "history": [
+        {
+          "timestamp": "2025-05-12T07:56:22.301Z",
+          "action": "Asignado",
+          "changedBy": 4,
+          "notes": "Petición asignada al personal 4"
+        }
+      ]
+    },
+    {
+      "id": "8365",
+      "userId": 1,
+      "hotelId": 1,
+      "roomId": 102,
+      "type": "Reparación",
+      "description": "a",
+      "status": "Resuelto",
+      "priority": "Urgente",
+      "createdAt": "2025-05-12T07:55:24.021Z",
+      "assignedTo": 4,
+      "completedAt": "2025-05-12T07:55:38.862Z",
+      "history": [
+        {
+          "timestamp": "2025-05-12T07:55:38.261Z",
+          "action": "Asignado",
+          "changedBy": 4,
+          "notes": "Petición asignada al personal 4"
+        },
+        {
+          "timestamp": "2025-05-12T07:55:38.862Z",
+          "action": "Resuelto",
+          "changedBy": 4,
+          "notes": "La petición ha sido completada"
+        }
+      ]
+    },
+    {
+      "id": "555a",
+      "userId": 1,
+      "hotelId": 1,
+      "roomId": 101,
+      "type": "Limpieza",
+      "description": "limpia ba;o",
+      "status": "En progreso",
+      "priority": "Urgente",
+      "createdAt": "2025-05-12T14:47:12.714Z",
+      "assignedTo": 4,
+      "completedAt": null,
+      "history": [
+        {
+          "timestamp": "2025-05-12T14:47:17.765Z",
+          "action": "Asignado",
+          "changedBy": 4,
+          "notes": "Petición asignada al personal 4"
+        }
+      ]
+    },
+    {
+      "id": "28bd",
+      "userId": 1,
+      "hotelId": 1,
+      "roomId": 104,
+      "type": "Limpieza",
+      "description": "hjggjg",
+      "status": "En progreso",
+      "priority": "Urgente",
+      "createdAt": "2025-05-12T15:56:12.883Z",
+      "assignedTo": 5,
+      "completedAt": null,
+      "history": [
+        {
+          "timestamp": "2025-05-12T15:56:39.357Z",
+          "action": "Asignado",
+          "changedBy": 5,
+          "notes": "Petición asignada al personal 5"
+        }
+      ]
+    }
+  ],
+  "userDevicePreferences": [
+    {
+      "id": 1,
+      "userId": 1,
+      "deviceId": 2,
+      "customName": "My Reading Light",
+      "overrides": {
+        "brightness": 85,
+        "color": "cool"
+      },
+      "lastUpdated": "2025-05-10T08:30:00Z"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "deviceId": 3,
+      "customName": "Window Shades",
+      "overrides": {
+        "position": 50
+      },
+      "lastUpdated": "2025-05-10T09:15:00Z"
+    }
+  ]
+}

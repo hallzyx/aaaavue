@@ -1,0 +1,39 @@
+{
+  "dashboard": {
+    "title": "Hotel Admin Dashboard",
+    "summary_cards": {
+      "occupied_rooms": "Occupied Rooms",
+      "bookings_today": "Bookings Today",
+      "urgent_requests": "Urgent Requests",
+      "pending_checkouts": "Pending Check-outs"
+
+    },
+    "iot_devices": "Inactive IoT Devices",
+    "view_details": "View Details",
+    "inactive_devices_list": "List of inactive devices",
+    "last_month_bookings": "Bookings in the last 30 days",
+    "current_guests":{
+      "title": "Current Guests",
+      "roomNumber": "Room",
+      "name": "Name",
+      "checkIn": "Check-in",
+      "checkOut": "Check-out"
+    },
+
+    "charts": {
+      "iot_devices_status": "IoT Devices Status",
+      "labels": {
+        "online": "Online",
+        "maintenance": "Maintenance",
+        "inactive": "Inactive"
+      }
+    },
+    "guests_table": {
+      "title": "Current Guests",
+      "roomNumber": "Room",
+      "name": "Name",
+      "checkIn": "Check-in",
+      "checkOut": "Check-out"
+    }
+  }
+}

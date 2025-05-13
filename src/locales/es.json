@@ -1,0 +1,39 @@
+{
+  "dashboard": {
+    "title": "Panel de Administración Hotelera",
+    "summary_cards": {
+      "occupied_rooms": "Habitaciones ocupadas",
+      "bookings_today": "Reservas de hoy",
+      "urgent_requests": "Solicitudes urgentes",
+      "pending_checkouts": "Check-outs pendientes"
+    },
+    "iot_devices": "Dispositivos Iot Inactivos",
+    "inactive_devices_list": "Lista de dispositivos inactivos",
+    "view_details": "Ver Detalles",
+    "last_month_bookings": "Reservas en los últimos 30 días",
+    "current_guests":{
+        "title": "Huéspedes actuales",
+        "roomNumber": "Habitación",
+        "name": "Nombre",
+        "checkIn": "Check-in",
+        "checkOut": "Check-out"
+    },
+
+
+    "charts": {
+      "iot_devices_status": "Estado de dispositivos IoT",
+      "labels": {
+        "online": "Online",
+        "maintenance": "Mantenimiento",
+        "inactive": "Inactivo"
+      }
+    },
+    "guests_table": {
+      "title": "Huéspedes actuales",
+      "roomNumber": "Habitación",
+      "name": "Nombre",
+      "checkIn": "Check-in",
+      "checkOut": "Check-out"
+    }
+  }
+}
