@@ -95,6 +95,7 @@ const deleteRoomById = async (id) => {
   try {
     await deleteRoom(id)
     rooms.value = rooms.value.filter(r => r.id !== id)
+    roomDialog.value=false;
   } catch (error) {
     console.error('Error deleting room:', error.message)
   }
@@ -118,11 +119,13 @@ const saveRoom = async () => {
       const updated = await updateRoom(editingId.value, { ...roomForm })
       const index = rooms.value.findIndex(r => r.id === editingId.value)
       rooms.value[index] = updated
+      roomDialog.value = false
     } else {
       const created = await createRoom({ ...roomForm })
       rooms.value.push(created)
+      roomDialog.value = false
     }
-    roomDialog.value = false
+    
   } catch (error) {
     console.error('Error saving room:', error.message)
   }

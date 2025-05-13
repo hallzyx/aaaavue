@@ -15,10 +15,10 @@ export const createRoom = async (roomData) => {
 }
 
 export const updateRoom = async (id, roomData) => {
-    const response = await axios.put($`{API_URL}/${id}`, roomData)
+    const response = await axios.put(`${API_URL}/${id}`, roomData)
     return new Rooms(response.data)
 }
 
 export const deleteRoom = async (id) => {
-    await axios.delete($`{API_URL}/${id}`)
+    await axios.delete(`${API_URL}/${id}`)
 }
